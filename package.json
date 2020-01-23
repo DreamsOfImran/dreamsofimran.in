@@ -11,6 +11,7 @@
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.2.2",
     "core-js": "^3.4.4",
+    "jquery": "^3.4.1",
     "vue": "^2.6.11",
     "vue-meta": "^2.3.2",
     "vue-router": "^3.1.5"
@@ -21,7 +22,6 @@
     "@vue/cli-plugin-eslint": "^4.1.0",
     "@vue/cli-service": "^4.1.0",
     "babel-eslint": "^10.0.3",
-    "bootstrap": "^4.3.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "mutationobserver-shim": "^0.3.3",
