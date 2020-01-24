@@ -54,47 +54,47 @@
       <b-container>
         <b-container>
           <div class="section-title text-center">
-            <h2>Tools I played with</h2>
+            <h2>Tools I have played with</h2>
           </div>
         </b-container>
-        <carousel :autoplay="true" :loop="true" :items="5" class="text-center" :responsive="{0:{items:1,nav:false},600:{items:4,nav:false}}" :dots="false">
+        <carousel :autoplay="true" :loop="true" class="text-center" :responsive="{0:{items:1,nav:false},600:{items:3,nav:false},1000:{items:5,nav:false}}" :dots="false">
           <div class="services-block">
-            <i class="ion-ios-browsers-outline" />
-            <span>Facebook</span>
-            <p
-              class="separator"
-            >
-              It is a long established fact that a reader will be distracted by the
-            </p>
+            <a href="#">
+              <img src="img/logos/ruby.png" height="80" style="width:80px!important" class="m-auto" />
+            </a>
           </div>
 
           <div class="services-block">
-            <i class="ion-ios-lightbulb-outline" />
-            <span>Instagram</span>
-            <p
-              class="separator"
-            >
-              It is a long established fact that a reader will be distracted by the
-            </p>
+            <a href="#">
+              <img src="img/logos/vuejs.png" height="80" style="width:80px!important" class="m-auto" />
+            </a>
           </div>
+
           <div class="services-block">
-            <i class="ion-ios-lightbulb-outline" />
-            <span>Instagram</span>
-            <p
-              class="separator"
-            >
-              It is a long established fact that a reader will be distracted by the
-            </p>
+            <a href="#">
+              <img src="img/logos/golang.png" height="80" style="width:80px!important" class="m-auto" />
+            </a>
           </div>
+
           <div class="services-block">
-            <i class="ion-ios-lightbulb-outline" />
-            <span>Instagram</span>
-            <p
-              class="separator"
-            >
-              It is a long established fact that a reader will be distracted by the
-            </p>
+            <a href="#">
+              <img src="img/logos/python.png" height="80" style="width:80px!important" class="m-auto" />
+            </a>
           </div>
+
+          <div class="services-block">
+            <a href="#">
+              <img src="img/logos/rails.png" height="80" style="width:80px!important" class="m-auto" />
+            </a>
+          </div>
+
+          <div class="services-block">
+            <a href="#">
+              <img src="img/logos/flutter.png" height="80" style="width:80px!important" class="m-auto" />
+            </a>
+          </div>
+
+
         </carousel>
       </b-container>
     </div>
@@ -109,108 +109,30 @@
       <b-container>
         <b-row>
           <b-col md="12">
-            <!-- <div class="portfolio-list">
-              <ul class="nav list-unstyled" id="portfolio-flters">
-                <li class="filter filter-active" data-filter=".all">all</li>
-                <li class="filter" data-filter=".branding">branding</li>
-                <li class="filter" data-filter=".mockups">mockups</li>
-                <li class="filter" data-filter=".uikits">ui kits</li>
-                <li class="filter" data-filter=".webdesign">web design</li>
-                <li class="filter" data-filter=".photography">photography</li>
-              </ul>
-            </div> -->
-
-            <!-- <div class="portfolio-container">
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign" style="width: 255px; display: inline-block">
-                <a class="popup-img" href="https://placeimg.com/340/255/any?1">
-                  <img src="https://placeimg.com/340/255/any?1" alt="img">
-                </a>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign" style="width: 255px; display: inline-block">
-                <a class="popup-img" href="https://placeimg.com/340/255/any?1">
-                  <img src="https://placeimg.com/340/255/any?1" alt="img">
-                </a>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-                <a class="popup-img" href="https://placeimg.com/340/255/any?1">
-                  <img src="https://placeimg.com/340/255/any?1" alt="img">
-                </a>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-                <a class="popup-img" href="https://placeimg.com/340/255/any?1">
-                  <img src="https://placeimg.com/340/255/any?1" alt="img">
-                </a>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-                <a class="popup-img" href="https://placeimg.com/340/255/any?1">
-                  <img src="https://placeimg.com/340/255/any?1" alt="img">
-                </a>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-                <a class="popup-img" href="https://placeimg.com/340/255/any?1">
-                  <img src="https://placeimg.com/340/255/any?1" alt="img">
-                </a>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-                <a class="popup-img" href="https://placeimg.com/340/255/any?1">
-                  <img src="https://placeimg.com/340/255/any?1" alt="img">
-                </a>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-                <a class="popup-img" href="https://placeimg.com/340/255/any?1">
-                  <img src="https://placeimg.com/340/255/any?1" alt="img">
-                </a>
-              </div>
-            </div> -->
-
-
-            <!-- <div class="portfolio-container">
-              <vue-instagram token="8272330664.1677ed0.c558f1126b3f49019694d691a3a78fbb" :count="50" mediaType="image">
-                <b-col lg="4" md="6" class="portfolio-thumbnail" slot="feeds" slot-scope="props" style="width: auto; display: inline-block">
-                  <a class="popup-img" :href="props.feed.link">
-                    <img :src="props.feed.images.standard_resolution.url" alt="img">
-                  </a>
-                </b-col>
-              </vue-instagram>
-            </div> -->
-
-            <!-- <div class="portfolio-container">
-              <carousel v-if="showImages" :autoplay="true" :loop="true" :items="5" class="text-center" :responsive="{0:{items:1,nav:false},600:{items:4,nav:false}}" :dots="false">
-                <div class="services-block border border-thumbnail" v-for="image in imageList" :key="image.ID">
-                  <img :src="image.images.thumbnail.url" />
-                </div>
-              </carousel>
-            </div> -->
-
             <div class="portfolio-container">
-              <carousel v-if="showImages" :autoplay="true" :loop="true" :items="5" class="text-center" :responsive="{0:{items:1,nav:false},600:{items:4,nav:false}}" :dots="false">
-                <b-card v-for="image in imageList" :key="image.id" :img-src="image.images.standard_resolution.url" img-alt="Image" img-top>
-                  <b-card-text>
-                    {{ image.likes.count }}
-                  </b-card-text>
+              <carousel v-if="showImages" :autoplay="true" class="text-center" :responsive="{0:{items:1,nav:false},600:{items:3,nav:false},1000:{items:4,nav:false}}" :dots="false">
+                <b-card v-for="image in imageList" :key="image.id" :img-src="image.images.standard_resolution.url" img-alt="Image" img-height="250" img-width="250" img-top class="mx-2" no-body>
+                  <div>
+                    <b-row>
+
+                      <b-col>
+                        <v-icon medium class="text-danger">mdi-heart</v-icon>
+                        {{ image.likes.count }}
+                      </b-col>
+
+                      <b-col>
+                        <v-icon medium class="text-danger">mdi-comment-outline</v-icon>
+                        {{ image.comments.count }}
+                      </b-col>
+
+                    </b-row>
+                  </div>
                   <!-- <template v-slot:footer>
                     <small class="text-muted">Last updated 3 mins ago</small>
                   </template> -->
                 </b-card>
               </carousel>
             </div>
-
-            <!-- <div class="portfolio-container">
-              <carousel>
-                <div class="services-block">
-                  <img src="https://placeimg.com/400/200/any?1"/>
-                </div>
-              </carousel>
-            </div> -->
-
-            <!-- {{imageList[0].images.standard_resolution.url}} -->
           </b-col>
         </b-row>
       </b-container>
@@ -330,16 +252,6 @@
         <p>&copy; Copyrights <a href="#"><b>Imran Basha</b></a>. All rights reserved.</p>
       </b-container>
     </div>
-
-    <!-- <vue-instagram token="8272330664.1677ed0.c558f1126b3f49019694d691a3a78fbb" :count="50" mediaType="image">
-      <template slot="feeds" slot-scope="props">
-        <li class="fancy-list"> {{ props.feed.images.standard_resolution.url }} </li>
-        <b-img :src="props.feed.images.low_resolution.url" />
-      </template>
-      <template slot="error" slot-scope="props">
-        <div class="fancy-alert"> {{ props.error.error_message }} </div>
-      </template>
-    </vue-instagram> -->
   </div>
 </template>
 
