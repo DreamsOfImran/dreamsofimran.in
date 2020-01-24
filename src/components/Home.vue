@@ -16,10 +16,10 @@
     </div> -->
     <div id="header" class="home">
       <b-container>
-        <vue-typed-js :strings="['Developer', 'Designer', 'Freelancer', 'Photographer']" :loop="true" :smartBackspace="true" :backSpeed="40" :showCursor="true">
+        <vue-typed-js :strings="['Developer', 'Designer', 'Freelancer', 'Photographer']" :loop="true" :smart-backspace="true" :back-speed="40" :show-cursor="true">
           <div class="header-content">
             <h1>Imran Basha</h1>
-            <p><span class="typing"></span></p>
+            <p><span class="typing" /></p>
           </div>
         </vue-typed-js>
       </b-container>
@@ -191,7 +191,7 @@
 
             <div class="portfolio-container">
               <carousel v-if="showImages" :autoplay="true" :loop="true" :items="5" class="text-center" :responsive="{0:{items:1,nav:false},600:{items:4,nav:false}}" :dots="false">
-                <b-card :img-src="image.images.standard_resolution.url" img-alt="Image" img-top v-for="image in imageList" :key="image.id">
+                <b-card v-for="image in imageList" :key="image.id" :img-src="image.images.standard_resolution.url" img-alt="Image" img-top>
                   <b-card-text>
                     {{ image.likes.count }}
                   </b-card-text>
@@ -211,7 +211,6 @@
             </div> -->
 
             <!-- {{imageList[0].images.standard_resolution.url}} -->
-
           </b-col>
         </b-row>
       </b-container>
@@ -227,7 +226,6 @@
       <b-container>
         <div class="journal-block">
           <b-row>
-
             <b-col lg="4" md="6">
               <div class="journal-info">
                 <a href="blog-single.html"><img src="https://placeimg.com/400/200/any?1" class="img-responsive" alt="img"></a>
@@ -239,7 +237,6 @@
                 </div>
               </div>
             </b-col>
-
           </b-row>
         </div>
       </b-container>
@@ -251,7 +248,9 @@
           <b-row>
             <b-col lg="6">
               <div class="contact-contact">
-                <h2 class="mb-30">GET IN TOUCH</h2>
+                <h2 class="mb-30">
+                  GET IN TOUCH
+                </h2>
                 <ul class="contact-details">
                   <li><span>Broadway</span></li>
                   <li><span>Chennai, Tamil Nadu</span></li>
@@ -264,22 +263,21 @@
             <b-col lg="6">
               <b-form class="contactForm">
                 <b-row>
-
                   <b-col lg="6">
                     <b-form-group class="contact-block1">
-                      <b-input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required />
+                      <b-input id="name" type="text" class="form-control" name="name" placeholder="Your Name" required />
                     </b-form-group>
                   </b-col>
 
                   <b-col lg="6">
                     <b-form-group>
-                      <b-input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required />
+                      <b-input id="email" type="email" class="form-control" name="email" placeholder="Your Email" required />
                     </b-form-group>
                   </b-col>
 
                   <b-col lg="12">
                     <b-form-group>
-                      <b-input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
+                      <b-input id="subject" type="text" class="form-control" name="subject" placeholder="Subject" required />
                     </b-form-group>
                   </b-col>
 
@@ -290,7 +288,9 @@
                   </b-col>
 
                   <b-col lg="12">
-                    <b-btn type="submit" class="btn-default btn-send w-100 bg-dark">Send Message</b-btn>
+                    <b-btn type="submit" class="btn-default btn-send w-100 bg-dark">
+                      Send Message
+                    </b-btn>
                   </b-col>
                 </b-row>
               </b-form>
@@ -318,12 +318,12 @@
       <b-container>
         <div class="socials-media text-center">
           <ul class="list-unstyled">
-            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-            <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-            <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-            <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-            <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+            <li><a href="#"><i class="ion-social-facebook" /></a></li>
+            <li><a href="#"><i class="ion-social-twitter" /></a></li>
+            <li><a href="#"><i class="ion-social-instagram" /></a></li>
+            <li><a href="#"><i class="ion-social-googleplus" /></a></li>
+            <li><a href="#"><i class="ion-social-tumblr" /></a></li>
+            <li><a href="#"><i class="ion-social-dribbble" /></a></li>
           </ul>
         </div>
 
@@ -340,7 +340,6 @@
         <div class="fancy-alert"> {{ props.error.error_message }} </div>
       </template>
     </vue-instagram> -->
-
   </div>
 </template>
 

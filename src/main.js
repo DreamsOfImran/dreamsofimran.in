@@ -7,6 +7,7 @@ import VueInstagram from 'vue-instagram'
 import App from './App.vue'
 import router from './router'
 import axios from 'axios'
+import vuetify from './plugins/vuetify'
 
 
 Vue.use(VueTypedJs)
@@ -16,5 +17,6 @@ Vue.config.productionTip = false
 
 new Vue({
   router,
-  render: h => h(App),
+  vuetify,
+  render: h => h(App)
 }).$mount('#app')
