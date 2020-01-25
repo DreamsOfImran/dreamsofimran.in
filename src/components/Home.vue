@@ -54,43 +54,6 @@
             </a>
           </div>
 
-          <!-- <div class="services-block">
-            <a href="#">
-              <img src="img/logos/ruby.png" height="80" style="width:80px!important" class="m-auto" />
-            </a>
-          </div>
-
-          <div class="services-block">
-            <a href="#">
-              <img src="img/logos/vuejs.png" height="80" style="width:80px!important" class="m-auto" />
-            </a>
-          </div>
-
-          <div class="services-block">
-            <a href="#">
-              <img src="img/logos/golang.png" height="80" style="width:80px!important" class="m-auto" />
-            </a>
-          </div>
-
-          <div class="services-block">
-            <a href="#">
-              <img src="img/logos/python.png" height="80" style="width:80px!important" class="m-auto" />
-            </a>
-          </div>
-
-          <div class="services-block">
-            <a href="#">
-              <img src="img/logos/rails.png" height="80" style="width:80px!important" class="m-auto" />
-            </a>
-          </div>
-
-          <div class="services-block">
-            <a href="#">
-              <img src="img/logos/flutter.png" height="80" style="width:80px!important" class="m-auto" />
-            </a>
-          </div> -->
-
-
         </carousel>
       </b-container>
     </div>
