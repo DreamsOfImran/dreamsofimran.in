@@ -3,17 +3,6 @@
     <div>
       <NavBar />
     </div>
-    <!-- <div class="vh-100 text-white bg-img" style="background-image: url(img/6.jpg)">
-      <b-container class="my-auto text-center">
-        <b-row align-v="center" class="vh-100">
-          <b-col class="display-1">
-            I am Imran Basha
-            <br>
-            <span class="display-4">Developer</span>
-          </b-col>
-        </b-row>
-      </b-container>
-    </div> -->
     <div id="header" class="home">
       <b-container>
         <vue-typed-js :strings="['Developer', 'Designer', 'Freelancer', 'Photographer']" :loop="true" :smart-backspace="true" :back-speed="40" :show-cursor="true">
@@ -58,7 +47,14 @@
           </div>
         </b-container>
         <carousel :autoplay="true" :loop="true" class="text-center" :responsive="{0:{items:1,nav:false},600:{items:3,nav:false},1000:{items:5,nav:false}}" :dots="false">
-          <div class="services-block">
+
+          <div class="services-block" v-for="logo in logosList" :key="logo.id">
+            <a :href="logo.url">
+              <img :src="`img/logos/${logo.name}.png`" :alt="logo.name" height="80" style="width:80px!important" class="m-auto" />
+            </a>
+          </div>
+
+          <!-- <div class="services-block">
             <a href="#">
               <img src="img/logos/ruby.png" height="80" style="width:80px!important" class="m-auto" />
             </a>
@@ -92,7 +88,7 @@
             <a href="#">
               <img src="img/logos/flutter.png" height="80" style="width:80px!important" class="m-auto" />
             </a>
-          </div>
+          </div> -->
 
 
         </carousel>
@@ -267,7 +263,15 @@ export default {
   },
   data: () => ({
     imageList: [],
-    showImages: false
+    showImages: false,
+    logosList: [
+      {id: 1, name: 'ruby', url: '#'},
+      {id: 2, name: 'vuejs', url: '#'},
+      {id: 3, name: 'golang', url: '#'},
+      {id: 4, name: 'rails', url: '#'},
+      {id: 5, name: 'python', url: '#'},
+      {id: 6, name: 'flutter', url: '#'},
+    ]
   }),
   mounted() {
     this.fetchInstaImages()
