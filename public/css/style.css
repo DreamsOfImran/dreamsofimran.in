@@ -110,7 +110,7 @@ p {
 }
 
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .section-title h2 {
@@ -119,29 +119,29 @@ p {
   text-transform: uppercase;
 }
 
-.form-control {
-  background-color: transparent;
-  border: 1px solid #999;
-  border-radius: 0;
+.form-control-contact {
+  background-color: transparent !important;
+  border: 1px solid #999 !important;
+  border-radius: 0 !important;
   color: #999999;
-  font-size: 12px;
+  font-size: 12px !important;
   font-weight: 500;
   height: 50px;
   letter-spacing: 0.1em;
   padding-left: 10px;
-  margin: 0 0 25px 0;
+  /* margin: 0 0 25px 0; */
   line-height: 14px;
   text-transform: uppercase;
 }
 
-.form-control:focus {
+.form-control-contact:focus {
   box-shadow: none;
   outline: 0 none;
 }
 
 .paddsection {
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 30px;
 }
 
 .paddsections {
@@ -229,7 +229,7 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #header {
-  background: url("../img/6.jpg") repeat scroll center center / cover;
+  background: url("../img/home.jpeg") repeat scroll center center / cover;
   height: 100vh;
   width: 100%;
 }
@@ -237,7 +237,7 @@ nav ul li a {
 
 #header .header-content {
   height: 100vh;
-  text-align: center;
+  text-align: right;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -305,9 +305,10 @@ nav ul li a {
 }
 
 #about .about-descr .separator {
-  max-width: 80%;
+  /* max-width: 80%; */
   margin-bottom: 0;
   text-align: left;
+  font-family: 'Poppins', helvetica;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -446,7 +447,7 @@ nav ul li a {
   height: auto;
   width: 100%;
   background: #f7f7f7;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   position: relative;
 }
 
@@ -510,6 +511,7 @@ nav ul li a {
 #contact {
   height: auto;
   width: 100%;
+  font-family: 'Poppins', helvetica;
 }
 
 .contact-details {
@@ -567,7 +569,7 @@ nav ul li a {
 #footer {
   background: #f7f7f7;
   padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
 #footer .socials-media {
