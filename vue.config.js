@@ -1,5 +1,5 @@
 module.exports = {
-  // "publicPath": "dreamsofimran.in-test",
+  "publicPath": "dreamsofimran.in-source",
   "transpileDependencies": [
     "vuetify"
   ]
