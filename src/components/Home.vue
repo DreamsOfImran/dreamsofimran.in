@@ -371,23 +371,23 @@ export default {
     imageList: [],
     showImages: false,
     logosList: [
-      { id: 1, name: "ruby", url: "#" },
-      { id: 2, name: "vuejs", url: "#" },
-      { id: 3, name: "golang", url: "#" },
-      { id: 4, name: "rails", url: "#" },
-      { id: 5, name: "python", url: "#" },
-      { id: 6, name: "flutter", url: "#" },
-      { id: 7, name: "docker", url: "#" },
-      { id: 8, name: "java", url: "#" },
-      { id: 9, name: "c-sharp", url: "#" }
+      { id: 1, name: "ruby", url: "https://www.ruby-lang.org" },
+      { id: 2, name: "vuejs", url: "https://vuejs.org" },
+      { id: 3, name: "golang", url: "https://golang.org" },
+      { id: 4, name: "rails", url: "https://rubyonrails.org" },
+      { id: 5, name: "python", url: "https://www.python.org" },
+      { id: 6, name: "flutter", url: "https://flutter.dev" },
+      { id: 7, name: "docker", url: "https://www.docker.com" },
+      { id: 8, name: "java", url: "https://www.java.com" },
+      { id: 9, name: "c-sharp", url: "https://docs.microsoft.com/en-us/dotnet/csharp" }
     ],
     socialLinks: [
-      { id: 1, name: "facebook-box", url: "#" },
-      { id: 2, name: "twitter", url: "#" },
-      { id: 3, name: "instagram", url: "#" },
-      { id: 4, name: "github-box", url: "#" },
-      { id: 5, name: "medium", url: "#" },
-      { id: 6, name: "dev-to", url: "#" }
+      { id: 1, name: "facebook-box", url: "https://www.facebook.com/DreamsOfImran" },
+      { id: 2, name: "twitter", url: "https://twitter.com/DreamsOfImran" },
+      { id: 3, name: "instagram", url: "https://www.instagram.com/dreamsofimran" },
+      { id: 4, name: "github-box", url: "https://github.com/DreamsOfImran" },
+      { id: 5, name: "medium", url: "https://medium.com/@DreamsOfImran" },
+      { id: 6, name: "dev-to", url: "https://dev.to/dreamsofimran" }
     ],
     message: {
       name: '',
