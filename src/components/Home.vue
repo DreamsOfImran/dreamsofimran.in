@@ -435,7 +435,7 @@ export default {
     },
     sendMessage() {
       Email.send({
-        SecureToken : process.env.SMTP_SECURE_TOKEN,
+        SecureToken : process.env.VUE_APP_SMTP_SECURE_TOKEN,
         To : 'contactme@dreamsofimran.in',
         From : 'ibasha66@gmail.com',
         Subject : this.message.subject,
