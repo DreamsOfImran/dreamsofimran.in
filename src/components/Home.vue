@@ -86,6 +86,7 @@
                 feels as if you have been at the best party in town. How come
                 not everybody wants to be a developer.
               </p>
+              <br>
               <p class="separator">
                 Do you need a help on a project or do you just want to say hello? <a href="#contact">Contact me.</a>
               </p>
@@ -421,7 +422,7 @@ export default {
     fetchInstaImages() {
       this.$http
         .get(
-          "https://api.instagram.com/v1/users/self/media/recent?access_token=8272330664.1677ed0.c558f1126b3f49019694d691a3a78fbb&count=50"
+          `https://api.instagram.com/v1/users/self/media/recent?access_token=${process.env.VUE_APP_INSTAGRAM_ACCESS_TOKEN}&count=50`
         )
         .then(response => {
           this.imageList = response.data.data
@@ -434,11 +435,11 @@ export default {
     },
     sendMessage() {
       Email.send({
-        SecureToken : "6765f161-888e-4952-a20c-9bc64fa60755",
-        To : 'ibasha66@gmail.com',
+        SecureToken : process.env.SMTP_SECURE_TOKEN,
+        To : 'contactme@dreamsofimran.in',
         From : 'ibasha66@gmail.com',
         Subject : this.message.subject,
-        Body : this.message.messageBody
+        Body : this.message.email + ' ' + this.message.messageBody
       }).then(
         message => alert(message)
       )
