@@ -49,7 +49,7 @@
           :type-speed="100"
         >
           <div class="header-content">
-            <h1>Imran Basha</h1>
+            <h1>I am Imran Basha</h1>
             <p>
               <span class="typing" />
             </p>
