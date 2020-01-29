@@ -1,4 +1,4 @@
-# dreamsofimran.in-source
+# dreamsofimran.in
 
 ## Project setup
 ```
