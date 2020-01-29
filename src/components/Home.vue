@@ -93,7 +93,7 @@
             </div>
 
             <div id="footer" class="pb-0 pt-4">
-              <div class="socials-media text-left">
+              <div class="socials-media about-container">
                 <ul class="list-unstyled">
                   <li v-for="social in socialLinks" :key="social.id">
                     <a :href="social.url" target="_blank">
