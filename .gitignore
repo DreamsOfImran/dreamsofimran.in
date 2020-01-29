@@ -22,4 +22,3 @@ yarn-error.log*
 *.sw?
 src/components/layout/NavBar.vue
 .python-version
-
