@@ -14,10 +14,11 @@ const router = new Router({
       path: '/',
       component: Home
     },
-    {
-      path: '*',
-      component: PageNotFound
-    }
+    // {
+    //   path: '*',
+    //   component: PageNotFound
+    // }
+    //TODO Hiding 404 page for now
   ]
 })
 
