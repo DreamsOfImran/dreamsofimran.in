@@ -7,7 +7,7 @@
     />
   </div>
   <div v-else>
-    <b-navbar id="main-nav" toggleable="lg" fixed="top" v-show="showNavBar">
+    <b-navbar v-show="showNavBar" id="main-nav" toggleable="lg" fixed="top">
       <b-container class="py-0">
         <b-navbar-brand href="#" class="logo" style="font-family: 'Satisfy', cursive;">
           Dreams of Imran
@@ -420,10 +420,9 @@ export default {
       }
     },
     fetchInstaImages() {
-      let instaAccessToken = process.env.VUE_APP_INSTAGRAM_ACCESS_TOKEN
       this.$http
         .get(
-          `https://api.instagram.com/v1/users/self/media/recent?access_token=${instaAccessToken}&count=50`
+          `https://api.instagram.com/v1/users/self/media/recent?access_token=${process.env.VUE_APP_INSTAGRAM_ACCESS_TOKEN}&count=50`
         )
         .then(response => {
           this.imageList = response.data.data
@@ -435,9 +434,8 @@ export default {
         })
     },
     sendMessage() {
-      let smtpSecureToken = process.env.VUE_APP_SMTP_SECURE_TOKEN
       Email.send({
-        SecureToken : smtpSecureToken,
+        SecureToken : process.env.VUE_APP_SMTP_SECURE_TOKEN,
         To : 'contactme@dreamsofimran.in',
         From : 'ibasha66@gmail.com',
         Subject : this.message.subject,
