@@ -409,7 +409,7 @@ export default {
     loader() {
       setTimeout(() => {
         this.loading = false
-      }, 3000)
+      }, 4000)
     },
     onScroll() {
       const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
