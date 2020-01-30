@@ -1,25 +1,24 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Meta from 'vue-meta'
-import Home from './../components/Home'
-import PageNotFound from './../components/pages/404'
+import Vue from "vue";
+import Router from "vue-router";
+import Meta from "vue-meta";
+import Home from "./../components/Home";
+import PageNotFound from "./../components/pages/404";
 
-Vue.use(Router)
-Vue.use(Meta)
+Vue.use(Router);
+Vue.use(Meta);
 
 const router = new Router({
-  // mode: 'history',
+  mode: "history",
   routes: [
     {
-      path: '/',
+      path: "/",
       component: Home
     },
-    // {
-    //   path: '*',
-    //   component: PageNotFound
-    // }
-    //TODO Hiding 404 page for now
+    {
+      path: "*",
+      component: PageNotFound
+    }
   ]
-})
+});
 
-export default router
+export default router;
