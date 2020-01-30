@@ -354,11 +354,6 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-@import '/css/style.css';
-@import '/css/responsive.css';
-</style>
-
 <script>
 // import NavBar from "./layout/NavBar"
 import carousel from "vue-owl-carousel"
