@@ -434,16 +434,32 @@ export default {
         })
     },
     sendMessage() {
-      let message_body = `Name: ${this.message.name}<br>Email: ${this.message.email}<br>Subject: ${this.message.subject}<br>Message: ${this.message.messageBody}`
+      let message_body = `Name: ${this.message.name}<br>
+                          Email: ${this.message.email}<br>
+                          Subject: ${this.message.subject}<br>
+                          Message: ${this.message.messageBody}`
       Email.send({
         SecureToken : process.env.VUE_APP_SMTP_SECURE_TOKEN,
         To : 'contactme@dreamsofimran.in',
         From : 'ibasha66@gmail.com',
         Subject : this.message.subject,
         Body : message_body
-      }).then(
-        message => alert(message)
-      )
+      })
+      .then((message) => {
+        if(message === 'OK') {
+          this.$toast("Your Message Send Successfully!")
+          this.clearForm()
+        } else {
+          this.clearForm()
+          this.$toast.error("Oops! Something went wrong.")
+        }
+      })
+    },
+    clearForm() {
+      this.message.name = ''
+      this.message.email = ''
+      this.message.subject = ''
+      this.message.messageBody = ''
     }
   }
 }

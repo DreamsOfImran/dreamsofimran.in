@@ -7,9 +7,11 @@ import App from './App.vue'
 import router from './router'
 import axios from 'axios'
 import vuetify from './plugins/vuetify'
-
+import Toast from 'vue-toastification'
+import "vue-toastification/dist/index.css"
 
 Vue.use(VueTypedJs)
+Vue.use(Toast)
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
