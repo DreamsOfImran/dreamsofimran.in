@@ -154,7 +154,7 @@
             <div class="portfolio-container">
               <carousel
                 v-if="showImages"
-                :autoplay="false"
+                :autoplay="true"
                 class="text-center"
                 :responsive="{
                   0: { items: 1 },

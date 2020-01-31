@@ -444,7 +444,8 @@ nav ul li a {
 }
 
 .portfolio-container .likes-and-comments {
-  padding: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 /*-----------------------------------------------------------------------------------*/
