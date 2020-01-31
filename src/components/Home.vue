@@ -447,7 +447,7 @@ export default {
       })
       .then((message) => {
         if(message === 'OK') {
-          this.$toast("Your Message Send Successfully!")
+          this.$toast("Your Message Sent Successfully!")
           this.clearForm()
         } else {
           this.clearForm()
