@@ -154,7 +154,7 @@
             <div class="portfolio-container">
               <carousel
                 v-if="showImages"
-                :autoplay="true"
+                :autoplay="false"
                 class="text-center"
                 :responsive="{
                   0: { items: 1 },
@@ -180,7 +180,7 @@
                     no-body
                   >
                     <div>
-                      <b-row>
+                      <b-row class="likes-and-comments">
                         <b-col>
                           <v-icon medium class="text-danger">mdi-heart</v-icon>
                           {{ image.likes.count }}
