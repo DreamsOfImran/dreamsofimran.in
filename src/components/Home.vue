@@ -358,6 +358,7 @@
 // import NavBar from "./layout/NavBar"
 import carousel from "vue-owl-carousel"
 import { BreedingRhombusSpinner } from 'epic-spinners'
+import NewMessage from './../templates/NewMessage'
 
 export default {
   name: "Home",
@@ -434,16 +435,13 @@ export default {
         })
     },
     sendMessage() {
-      let message_body = `Name: ${this.message.name}<br>
-                          Email: ${this.message.email}<br>
-                          Subject: ${this.message.subject}<br>
-                          Message: ${this.message.messageBody}`
+      let emailTemplate = NewMessage.generateEmailTemplate(this.message)
       Email.send({
         SecureToken : process.env.VUE_APP_SMTP_SECURE_TOKEN,
         To : 'contactme@dreamsofimran.in',
         From : 'ibasha66@gmail.com',
         Subject : this.message.subject,
-        Body : message_body
+        Body : emailTemplate
       })
       .then((message) => {
         if(message === 'OK') {
