@@ -10,19 +10,19 @@
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="#header">
+          <b-nav-item href="#" v-scroll-to="'#header'">
             Home
           </b-nav-item>
-          <b-nav-item href="#about">
+          <b-nav-item href="#" v-scroll-to="'#about'">
             About
           </b-nav-item>
-          <b-nav-item href="#portfolio">
+          <b-nav-item href="#" v-scroll-to="'#portfolio'">
             Gallery
           </b-nav-item>
-          <b-nav-item href="#journal">
+          <b-nav-item href="#" v-scroll-to="'#journal'">
             Blogs
           </b-nav-item>
-          <b-nav-item href="#contact">
+          <b-nav-item href="#" v-scroll-to="'#contact'">
             Contact
           </b-nav-item>
         </b-navbar-nav>
