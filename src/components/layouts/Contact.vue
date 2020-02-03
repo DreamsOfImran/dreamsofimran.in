@@ -105,10 +105,14 @@ export default {
     message: {
       name: '',
       email: '',
+      ipAddress: '',
       subject: '',
       messageBody: ''
     }
   }),
+  mounted() {
+    this.getIPAddress()
+  },
   methods: {
     sendMessage() {
       let emailTemplate = NewMessage.generateEmailTemplate(this.message)
@@ -127,6 +131,13 @@ export default {
           this.clearForm()
           this.$toast.error('Oops! Something went wrong.')
         }
+      })
+    },
+    getIPAddress() {
+      fetch('https://api.ipify.org?format=json')
+      .then(x => x.json())
+      .then(({ ip }) => {
+        this.message.ipAddress = ip;
       })
     },
     clearForm() {
