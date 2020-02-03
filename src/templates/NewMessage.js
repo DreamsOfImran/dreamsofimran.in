@@ -373,6 +373,10 @@ const NewMessage = {
                                           <td>${message.email}</td>
                                         </tr>
                                         <tr>
+                                          <td>IP Address</td>
+                                          <td>${message.ipAddress}</td>
+                                        </tr>
+                                        <tr>
                                           <td>Subject</td>
                                           <td>${message.subject}</td>
                                         </tr>
