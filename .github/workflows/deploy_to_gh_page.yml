@@ -12,8 +12,8 @@ jobs:
 
     - name: Build
       run: |
-        npm install
-        npm run-script build
+        yarn install
+        yarn build
       env:
         VUE_APP_INSTAGRAM_ACCESS_TOKEN: ${{ secrets.VUE_APP_INSTAGRAM_ACCESS_TOKEN }}
         VUE_APP_SMTP_SECURE_TOKEN: ${{ secrets.VUE_APP_SMTP_SECURE_TOKEN }}

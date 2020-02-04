@@ -137,7 +137,7 @@ export default {
       fetch('https://api.ipify.org?format=json')
       .then(x => x.json())
       .then(({ ip }) => {
-        this.message.ipAddress = ip;
+        this.message.ipAddress = ip
       })
     },
     clearForm() {
