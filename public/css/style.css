@@ -443,11 +443,6 @@ nav ul li a {
   max-width: 100%;
 }
 
-.likes-and-comments {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
 .carousel-3d-container figcaption {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
@@ -455,7 +450,8 @@ nav ul li a {
   bottom: 0;
   position: absolute;
   bottom: 0;
-  /* padding: 15px; */
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-size: 12px;
   min-width: 100%;
   box-sizing: border-box;
