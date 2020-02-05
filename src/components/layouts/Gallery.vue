@@ -12,7 +12,7 @@
           <v-img :src="image.images.standard_resolution.url" :lazy-src="image.images.thumbnail.url" class="insta-img" />
         </a>
         <figcaption>
-          <b-row  class="text-center">
+          <b-row  class="text-center likes-and-comments">
             <b-col>
               <v-icon medium class="text-danger">mdi-heart</v-icon>
               {{ image.likes.count }}
