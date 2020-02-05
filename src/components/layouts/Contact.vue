@@ -84,8 +84,16 @@
                 </b-col>
 
                 <b-col lg="12" class="py-0">
-                  <b-btn type="submit" class="btn-default btn-send w-100 bg-dark">
-                    Send Message
+                  <b-btn type="submit" class="btn-default btn-send w-100 bg-dark" :disabled="sending">
+                    <atom-spinner
+                      v-if="sending"
+                      :animation-duration="1000"
+                      :size="40"
+                      class="mx-auto"
+                    />
+                    <span v-else>
+                      Send Message
+                    </span>
                   </b-btn>
                 </b-col>
               </b-row>
@@ -98,10 +106,15 @@
 </template>
 
 <script>
+import { AtomSpinner } from 'epic-spinners'
 import NewMessage from './../../templates/NewMessage'
 export default {
   name: 'Contact',
+  components: {
+    AtomSpinner
+  },
   data: () => ({
+    sending: false,
     message: {
       name: '',
       email: '',
@@ -115,6 +128,7 @@ export default {
   },
   methods: {
     sendMessage() {
+      this.sending = true
       let emailTemplate = NewMessage.generateEmailTemplate(this.message)
       Email.send({
         SecureToken : process.env.VUE_APP_SMTP_SECURE_TOKEN,
@@ -127,9 +141,11 @@ export default {
         if(message === 'OK') {
           this.$toast('Your Message Sent Successfully!')
           this.clearForm()
+          this.sending = false
         } else {
           this.clearForm()
           this.$toast.error('Oops! Something went wrong.')
+          this.sending = false
         }
       })
     },
