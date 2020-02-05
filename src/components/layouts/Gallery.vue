@@ -6,67 +6,33 @@
       </div>
     </b-container>
 
-    <b-container>
-      <b-row>
-        <b-col md="12">
-          <div class="portfolio-container">
-            <carousel
-              v-if="showImages"
-              :autoplay="true"
-              class="text-center"
-              :responsive="{
-                0: { items: 1 },
-                768: { items: 2 },
-                900: { items: 4 }
-              }"
-              :dots="false"
-            >
-              <a
-                v-for="image in imageList"
-                :key="image.id"
-                :href="image.link"
-                style="color: inherit"
-                target="_blank"
-              >
-                <b-card
-                  :img-src="image.images.standard_resolution.url"
-                  img-alt="Image"
-                  img-height="250"
-                  img-width="250"
-                  img-top
-                  class="mx-2"
-                  no-body
-                >
-                  <div>
-                    <b-row class="likes-and-comments">
-                      <b-col>
-                        <v-icon medium class="text-danger">mdi-heart</v-icon>
-                        {{ image.likes.count }}
-                      </b-col>
+    <carousel-3d v-if="showImages" :width="350" :height="300" :display="7" :autoplay="true" :autoplayHoverPause="false" :border="0">
+      <slide v-for="(image, i) in imageList" :index="i" :key="i">
+        <a :href="image.link" target="_blank">
+          <v-img :src="image.images.standard_resolution.url" :lazy-src="image.images.thumbnail.url" class="insta-img" />
+        </a>
+        <figcaption>
+          <b-row  class="text-center">
+            <b-col>
+              <v-icon medium class="text-danger">mdi-heart</v-icon>
+              {{ image.likes.count }}
+            </b-col>
 
-                      <b-col>
-                        <v-icon medium class="text-danger">mdi-comment-outline</v-icon>
-                        {{ image.comments.count }}
-                      </b-col>
-                    </b-row>
-                  </div>
-                </b-card>
-              </a>
-            </carousel>
-          </div>
-        </b-col>
-      </b-row>
-    </b-container>
+            <b-col>
+              <v-icon medium class="text-danger">mdi-comment-outline</v-icon>
+              {{ image.comments.count }}
+            </b-col>
+          </b-row>
+        </figcaption>
+      </slide>
+    </carousel-3d>
+
   </div>
 </template>
 
 <script>
-import carousel from 'vue-owl-carousel'
 export default {
   name: 'Gallery',
-  components: {
-    carousel
-  },
   data: () => ({
     imageList: [],
     showImages: false

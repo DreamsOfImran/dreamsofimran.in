@@ -448,6 +448,24 @@ nav ul li a {
   padding-bottom: 12px;
 }
 
+.carousel-3d-container figcaption {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  bottom: 0;
+  position: absolute;
+  bottom: 0;
+  /* padding: 15px; */
+  font-size: 12px;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-3d-container .insta-img {
+  height: 100%;
+  object-fit: cover;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*  Journal
 /*-----------------------------------------------------------------------------------*/
