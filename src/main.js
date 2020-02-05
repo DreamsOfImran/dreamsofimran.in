@@ -10,12 +10,14 @@ import vuetify from './plugins/vuetify'
 import Toast from 'vue-toastification'
 import VueScrollTo from 'vue-scrollto'
 import Carousel3d from 'vue-carousel-3d'
+import VueGtag from 'vue-gtag'
 import "vue-toastification/dist/index.css"
 
 Vue.use(VueTypedJs)
 Vue.use(VueScrollTo)
 Vue.use(Carousel3d)
 Vue.use(Toast)
+Vue.use(VueGtag, { config: { id: process.env.VUE_APP_GOOGLE_ANALYTICS_ID } })
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
