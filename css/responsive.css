@@ -83,6 +83,15 @@
     float: none;
     display: inline-block;
   }
+
+  #footer .about-container {
+    text-align: center;
+  }
+
+  #footer .about-container li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 /** Width between 767px to 0
@@ -153,6 +162,15 @@
     margin-left: 0;
     float: none;
     display: inline-block;
+  }
+
+  #footer .about-container {
+    text-align: center;
+  }
+
+  #footer .about-container li {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -225,6 +243,15 @@
     float: none;
     display: inline-block;
   }
+
+  #footer .about-container {
+    text-align: center;
+  }
+
+  #footer .about-container li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 /** Width between 480px to 0
@@ -294,6 +321,15 @@
     margin-left: 0;
     float: none;
     display: inline-block;
+  }
+
+  #footer .about-container {
+    text-align: center;
+  }
+
+  #footer .about-container li {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -369,5 +405,14 @@
   .entry-comments-body span {
     display: inline-block;
     margin-right: 0;
+  }
+
+  #footer .about-container {
+    text-align: center;
+  }
+
+  #footer .about-container li {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
