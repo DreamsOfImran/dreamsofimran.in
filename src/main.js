@@ -9,10 +9,12 @@ import axios from 'axios'
 import vuetify from './plugins/vuetify'
 import Toast from 'vue-toastification'
 import VueScrollTo from 'vue-scrollto'
+import Carousel3d from 'vue-carousel-3d'
 import "vue-toastification/dist/index.css"
 
 Vue.use(VueTypedJs)
 Vue.use(VueScrollTo)
+Vue.use(Carousel3d)
 Vue.use(Toast)
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
