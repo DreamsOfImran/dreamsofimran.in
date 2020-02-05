@@ -17,6 +17,7 @@ jobs:
       env:
         VUE_APP_INSTAGRAM_ACCESS_TOKEN: ${{ secrets.VUE_APP_INSTAGRAM_ACCESS_TOKEN }}
         VUE_APP_SMTP_SECURE_TOKEN: ${{ secrets.VUE_APP_SMTP_SECURE_TOKEN }}
+        VUE_APP_GOOGLE_ANALYTICS_ID: ${{ secrets.VUE_APP_GOOGLE_ANALYTICS_ID }}
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
