@@ -19,7 +19,7 @@
                   <span>+91 8056032342</span>
                 </li>
                 <li>
-                  <span>contactme@dreamsofimran.in</span>
+                  <span>mail@dreamsofimran.in</span>
                 </li>
               </ul>
             </div>
@@ -132,7 +132,7 @@ export default {
       let emailTemplate = NewMessage.generateEmailTemplate(this.message)
       Email.send({
         SecureToken : process.env.VUE_APP_SMTP_SECURE_TOKEN,
-        To : 'contactme@dreamsofimran.in',
+        To : 'mail@dreamsofimran.in',
         From : 'ibasha66@gmail.com',
         Subject : this.message.subject,
         Body : emailTemplate
