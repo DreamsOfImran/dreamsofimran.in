@@ -273,7 +273,7 @@ nav ul li a {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*  Aout-us
+/*  About-me
 /*-----------------------------------------------------------------------------------*/
 
 #about {
@@ -308,6 +308,26 @@ nav ul li a {
   margin-bottom: 0;
   text-align: left;
   font-family: 'Poppins', helvetica;
+}
+#about .about-descr .about-contact-link {
+  line-height: 24px;
+  margin: 0 0 13px 0;
+  font-weight: 400;
+  color: #292929;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#about .about-descr .about-contact-link:hover {
+  color: #b8a07e;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 /*-----------------------------------------------------------------------------------*/
