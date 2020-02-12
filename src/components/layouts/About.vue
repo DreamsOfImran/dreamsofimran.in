@@ -29,7 +29,7 @@
             </p>
             <br>
             <p class="separator">
-              Do you need a help on a project or do you just want to say hello? <a href="#contact">Contact me.</a>
+              Do you need help with a project or do you just want to say hello? <a v-scroll-to="'#contact'" class="about-contact-link" href="#">Contact me.</a>
             </p>
           </div>
 
