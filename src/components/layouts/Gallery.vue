@@ -2,7 +2,7 @@
   <div id="portfolio" class="text-center paddsection">
     <b-container>
       <div class="section-title text-center">
-        <h2>Gallery</h2>
+        <h2>Experiments with camera</h2>
       </div>
     </b-container>
 
