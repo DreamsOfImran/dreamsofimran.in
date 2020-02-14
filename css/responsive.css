@@ -92,6 +92,10 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+  #footer .socials-media li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 /** Width between 767px to 0
@@ -169,6 +173,10 @@
   }
 
   #footer .about-container li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #footer .socials-media li {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -252,6 +260,10 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+  #footer .socials-media li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 /** Width between 480px to 0
@@ -328,6 +340,10 @@
   }
 
   #footer .about-container li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #footer .socials-media li {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -412,6 +428,10 @@
   }
 
   #footer .about-container li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #footer .socials-media li {
     padding-left: 10px;
     padding-right: 10px;
   }
