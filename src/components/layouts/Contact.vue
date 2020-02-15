@@ -36,7 +36,7 @@
                       type="text"
                       class="form-control-contact py-4"
                       name="name"
-                      placeholder="Your Name"
+                      placeholder="YOUR NAME"
                       required
                     />
                   </b-form-group>
@@ -50,7 +50,7 @@
                       type="email"
                       class="form-control-contact py-4"
                       name="email"
-                      placeholder="Your Email"
+                      placeholder="YOUR EMAIL"
                       required
                     />
                   </b-form-group>
@@ -64,7 +64,7 @@
                       type="text"
                       class="form-control-contact py-4"
                       name="subject"
-                      placeholder="Subject"
+                      placeholder="SUBJECT"
                       required
                     />
                   </b-form-group>
@@ -77,7 +77,7 @@
                       class="form-control-contact"
                       name="message"
                       rows="4"
-                      placeholder="Message"
+                      placeholder="MESSAGE"
                       required
                     />
                   </b-form-group>
