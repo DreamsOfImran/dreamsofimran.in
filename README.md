@@ -1,4 +1,5 @@
 # dreamsofimran.in
+![Deploy to GitHub Pages](https://github.com/DreamsOfImran/dreamsofimran.in/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
 
 Personal Portfolio Website
 
