@@ -18,7 +18,7 @@
             </p>
 
             <p class="separator">
-              I’m a developer from India, with 2+ years of experience. I
+              I’m a developer from India, with 4+ years of experience. I
               almost code every day, and I still love it as much now as when I
               first discovered it. Writing code has always been easy to me as
               breathing, and even if I didn’t get paid for doing it. I love to
