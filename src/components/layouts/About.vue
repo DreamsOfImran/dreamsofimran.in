@@ -25,7 +25,7 @@
               do it anyhow because it is fun. The sense of accomplishment when
               solving a really complicated problem cannot be beat! It just
               feels as if you have been at the best party in town. How come
-              not everybody wants to be a developer.
+              not everybody wants to be a developer?
             </p>
             <br>
             <p class="separator">
