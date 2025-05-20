@@ -197,7 +197,7 @@ export const socialLinks = [
   {
     name: "LinkedIn",
     iconUrl: linkedin,
-    link: "https://www.linkedin.com/in/imranbasha",
+    link: "https://www.linkedin.com/in/imran-basha",
   },
   {
     name: "X (Twitter)",
